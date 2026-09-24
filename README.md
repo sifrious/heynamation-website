@@ -1,6 +1,6 @@
 # Heynamation, LLC website
 
-Static company information page for heynamation.com, hosted on GitHub Pages.
+Static company information page for heynamation.com. This is a standalone repository, not a fork.
 
 ## Files
 
@@ -13,7 +13,7 @@ The complete page works without JavaScript. It uses system fonts and has no form
 
 ## Preview and publication
 
-Run `python3 -m http.server 8080` from the repository root and open `http://localhost:8080`. GitHub Pages publishes the configured source branch. Preserve the existing Pages source and domain settings when merging changes.
+Run `python3 -m http.server 8080` from the repository root and open `http://localhost:8080`. GitHub Pages is not enabled on this repository yet. The existing site and custom domain remain configured on `maryheyna/heynamation.com`. To migrate hosting, release the custom domain from that repository, enable Pages here using `main` and the repository root, then configure and verify `heynamation.com` and HTTPS. Keep the old repository until the new deployment works.
 
 ## Content scope
 
