@@ -6,7 +6,7 @@
   <meta name="description" content="Company information and website privacy notice for Heynamation, LLC.">
   <meta name="theme-color" content="#243b57">
   <title>Heynamation, LLC</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,7 +44,7 @@
           <h3>Cookies and analytics</h3>
           <p>This site's code does not set cookies or use analytics, advertising trackers, or browser storage.</p>
           <h3>Website hosting</h3>
-          <p>GitHub Pages hosts this website. GitHub may collect technical information, including IP addresses and request details, to operate and protect its services. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a> for details about GitHub's data practices.</p>
+          <p>The hosting infrastructure may process technical information, such as IP addresses and request details, to deliver this website and protect it from abuse.</p>
           <h3>Other websites</h3>
           <p>If you follow a link to another website, that website's privacy policy applies.</p>
         </section>
