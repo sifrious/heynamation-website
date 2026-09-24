@@ -1,0 +1,58 @@
+:root {
+  color-scheme: light;
+  --ink: #243b57;
+  --muted: #526276;
+  --paper: #f5f7fa;
+  --white: #ffffff;
+  --line: #d5dee8;
+  --accent: #294dad;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; border-top: 6px solid var(--ink); }
+a { color: var(--accent); text-underline-offset: 4px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
+.page { max-width: 1160px; margin-inline: auto; padding-inline: 48px; }
+.skip-link { position: absolute; left: 16px; top: -100px; z-index: 1; padding: 12px 20px; background: var(--white); }
+.skip-link:focus { top: 16px; }
+.site-header, .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.site-header { min-height: 110px; }
+.wordmark { display: flex; align-items: center; gap: 12px; color: var(--ink); font-weight: 650; text-decoration: none; }
+.monogram { display: grid; place-items: center; width: 38px; height: 38px; background: var(--ink); color: var(--white); border-radius: 10px 10px 10px 2px; font: bold 29px Georgia, serif; padding-bottom: 5px; }
+nav { display: flex; gap: 28px; }
+nav a { color: var(--ink); font-size: 14px; padding-block: 12px; }
+.intro { padding-block: 65px 68px; }
+.eyebrow { margin: 0 0 22px; font-size: 12px; font-weight: 650; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font: normal clamp(42px, 6.7vw, 80px)/1.1 Georgia, "Times New Roman", serif; letter-spacing: -.045em; }
+.suffix { white-space: nowrap; color: var(--muted); }
+.intro-text { margin: 24px 0 0; max-width: 480px; font-size: 18px; line-height: 1.65; color: var(--muted); }
+.information { display: grid; grid-template-columns: 1fr 1.7fr; background: var(--white); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.company, .privacy { padding: 40px; scroll-margin-top: 24px; }
+.company { border-right: 1px solid var(--line); }
+h2 { font-size: 20px; line-height: 1.4; margin: 0 0 24px; font-weight: 650; letter-spacing: -.02em; }
+dl { margin: 0; }
+dt { font-size: 13px; color: var(--muted); margin-top: 28px; }
+dt:first-child { margin-top: 0; }
+dd { margin: 8px 0 0; font-size: 16px; line-height: 1.6; overflow-wrap: anywhere; }
+h3 { font-size: 15px; line-height: 1.5; margin: 26px 0 8px; font-weight: 650; }
+.privacy p { margin: 0; font-size: 15px; line-height: 1.8; color: var(--muted); }
+.site-footer { padding-block: 30px 42px; font-size: 12px; color: var(--muted); }
+.site-footer a { color: var(--muted); padding-block: 12px; }
+@media (max-width: 720px) {
+  .page { padding-inline: 24px; }
+  .site-header { min-height: 95px; flex-wrap: wrap; gap: 8px; padding-block: 20px; }
+  nav { gap: 24px; }
+  .intro { padding-block: 44px; }
+  .information { grid-template-columns: 1fr; }
+  .company, .privacy { padding: 28px; }
+  .company { border-right: 0; border-bottom: 1px solid var(--line); }
+}
+@media (max-width: 380px) {
+  .page { padding-inline: 18px; }
+  h1 { font-size: 37px; }
+  .company, .privacy { padding: 24px; }
+}
