@@ -21,6 +21,18 @@ class WebsiteTest extends TestCase
         $this->assertSame([], $response->headers->getCookies());
     }
 
+    public function test_homepage_lists_projects_contact_and_legal_status(): void
+    {
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('href="https://mary.is/"', false)
+            ->assertSee('href="https://mary.is/trust"', false)
+            ->assertSee('id="projects"', false)
+            ->assertSee('id="contact"', false)
+            ->assertSee('id="legal"', false)
+            ->assertSee('Awaiting approved content');
+    }
+
     public function test_health_check_is_available(): void
     {
         $this->get('/up')->assertOk();
