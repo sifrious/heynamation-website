@@ -42,7 +42,22 @@ h3 { font-size: 15px; line-height: 1.5; margin: 26px 0 8px; font-weight: 650; }
 .privacy p { margin: 0; font-size: 15px; line-height: 1.8; color: var(--muted); }
 .site-footer { padding-block: 30px 42px; font-size: 12px; color: var(--muted); }
 .site-footer a { color: var(--muted); padding-block: 12px; }
+.panel { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 40px; margin-bottom: 32px; scroll-margin-top: 24px; }
+.project h3 { font-size: 18px; margin: 0 0 8px; }
+.project p, .muted { margin: 0; font-size: 15px; line-height: 1.8; color: var(--muted); }
+.product-list { margin: 16px 0; padding-left: 20px; font-size: 15px; line-height: 1.8; color: var(--muted); }
+.product-list li { margin-bottom: 4px; }
+.note { margin-top: 8px; }
+.section-break { margin-top: 40px; scroll-margin-top: 24px; }
+.legal-table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.6; }
+.legal-table th, .legal-table td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+.legal-table th { font-size: 12px; color: var(--muted); font-weight: 650; }
+.legal-table td:last-child { color: var(--muted); }
 @media (max-width: 720px) {
+  .panel { padding: 28px; }
+  .legal-table thead { display: none; }
+  .legal-table tr { display: block; border-bottom: 1px solid var(--line); padding-block: 10px; }
+  .legal-table td { display: block; border: 0; padding: 2px 0; }
   .page { padding-inline: 24px; }
   .site-header { min-height: 95px; flex-wrap: wrap; gap: 8px; padding-block: 20px; }
   nav { gap: 24px; }
